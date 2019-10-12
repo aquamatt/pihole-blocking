@@ -8,6 +8,10 @@ It's a complicated problem. Regex matches can wildcard block a domain, but I'm n
 
 
 
+## Regex list
+
+Regexes are useful for blocking some obvious TLDs. Find a small set in https://raw.githubusercontent.com/aquamatt/pihole-blocking/master/lists/regex.list to add to your list. The Pi-hole UI doesn't allow you to enter wildcards for a TLD, so just append these to `/etc/pihole/regex.list` and restart the `pihole-FTL` service.
+
 ## To use
 
 Download and run `build.sh`. This needs bash but in the `lists` directory here you will find a recent build which can be downloaded with https://raw.githubusercontent.com/aquamatt/pihole-blocking/master/lists/max_porn_block.list
