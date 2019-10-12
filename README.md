@@ -24,19 +24,19 @@ Thank you very much to @chadmayfield for his original work.
 
 ## Pi-hole installation
 
-https://github.com/pi-hole/pi-hole/#one-step-automated-install
+- https://github.com/pi-hole/pi-hole/#one-step-automated-install
 
 ## Securing Pi-hole and using CloudflareD to give secure DNS requests
 
-https://docs.pi-hole.net/guides/dns-over-https/
-https://scotthelme.co.uk/securing-dns-across-all-of-my-devices-with-pihole-dns-over-https-1-1-1-1/
+- https://docs.pi-hole.net/guides/dns-over-https/
+- https://scotthelme.co.uk/securing-dns-across-all-of-my-devices-with-pihole-dns-over-https-1-1-1-1/
 
 If cloudflared segfaults, you can try stubby:
 
-https://www.reddit.com/r/pihole/comments/7oyh9m/guide_how_to_use_pihole_with_stubby/
+- https://www.reddit.com/r/pihole/comments/7oyh9m/guide_how_to_use_pihole_with_stubby/
 
 ## DNS block lists
-https://www.iblocklist.com/lists?category=general
-https://firebog.net
+- https://www.iblocklist.com/lists?category=general
+- https://firebog.net
 
 Blog on generating a porn block list: https://chadmayfield.com/2017/06/29/blocking-porn-with-pihole/
