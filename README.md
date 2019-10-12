@@ -18,11 +18,7 @@ Download and run `build.sh`. This needs bash but in the `lists` directory here y
 
 This link can also be used directly in your Pi-hole configuration.
 
-
-
 Thank you very much to @chadmayfield for his original work.
-
-
 
 # Additional notes for Pi-hole users
 
@@ -40,7 +36,8 @@ If cloudflared segfaults, you can try stubby:
 - https://www.reddit.com/r/pihole/comments/7oyh9m/guide_how_to_use_pihole_with_stubby/
 
 ## DNS block lists
-- https://www.iblocklist.com/lists?category=general
 - https://firebog.net
+- https://github.com/topics/pihole-blocklists
+- https://www.iblocklist.com/lists?category=general
 
 Blog on generating a porn block list: https://chadmayfield.com/2017/06/29/blocking-porn-with-pihole/
