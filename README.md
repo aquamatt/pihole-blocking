@@ -41,3 +41,11 @@ If cloudflared segfaults, you can try stubby:
 - https://www.iblocklist.com/lists?category=general
 
 Blog on generating a porn block list: https://chadmayfield.com/2017/06/29/blocking-porn-with-pihole/
+
+
+# Whitelists
+ `whitelist.txt` contains some whitelisted domains. These may be of more use to
+me than you but certain sites, such as a homework site for kids, use these
+URLs legitimately. Unfortunately some CDN edge domains such as Cloudfront
+domains may be blacklisted because they have been involved in ad serving, but
+they can, of course, also be used for other things, or re-allocated.
