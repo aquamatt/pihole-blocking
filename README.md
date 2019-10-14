@@ -35,6 +35,30 @@ If cloudflared segfaults, you can try stubby:
 
 - https://www.reddit.com/r/pihole/comments/7oyh9m/guide_how_to_use_pihole_with_stubby/
 
+### Stubby and 1.1.1.1
+The SHA256 hash of the 1.1.1.1 TLS certificate regularly changes (ie the cert
+is rotated). Given that this needs to go into the stubby configuration it will
+result in a failure whenever the cert is changed. The relevant configuration
+section in `/etc/stubby.yml` is:
+
+```
+  - address_data: 1.1.1.1
+    tls_auth_name: "cloudflare-dns.com"
+    tls_pubkey_pinset:
+      - digest: "sha256"
+        value: V6zes8hHBVwUECsHf7uV5xGM7dj3uMXIS9//7qC8+jU=
+```
+
+The correct value for `value` can be found with OpenSSL tools:
+
+```
+$ echo | openssl s_client -connect '1.1.1.1:853' 2>/dev/null | \
+  openssl x509 -pubkey -noout | \
+  openssl pkey -pubin -outform der | \
+  openssl dgst -sha256 -binary | \
+  openssl enc -base64
+```
+
 ## DNS block lists
 - https://firebog.net
 - https://github.com/topics/pihole-blocklists
